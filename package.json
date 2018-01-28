@@ -4,6 +4,7 @@
   "description": "Angular wrapper for @shopify/draggable",
   "main": "index.js",
   "scripts": {
+    "build": "ngc --project",
     "test": "tsc && ava"
   },
   "repository": "https://github.com/mikerhyssmith/ngxdraggable",

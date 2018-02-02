@@ -1,12 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChildren } from '@angular/core';
+import { Draggable } from '@shopify/draggable';
+import { DraggableContainer } from 'container/draggable-container.directive';
 
 @Component({
-    selector: 'ngx-draggable',
-    templateUrl: 'draggable.component.html'
+    selector: 'draggable-container',
+    templateUrl: 'draggable-container.component.html'
 })
 
 export class DraggableComponent implements OnInit {
-    constructor() { }
+    
+    @ViewChildren(DraggableContainer)
+    private containers: Array<ElementRef>;
 
-    ngOnInit() { }
+    private draggable: Draggable;
+   
+
+    constructor(private options: DraggableOptions) { }
+
+    ngOnInit() {
+        const containerElements = this.containers.map(container => container.nativeElement);
+        this.draggable = new Draggable(containerElements, this.options);
+    }
+
+    ngOnDestroy() {
+        this.draggable.destroy();
+    }
 }

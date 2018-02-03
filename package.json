@@ -4,6 +4,8 @@
   "description": "Angular wrapper for @shopify/draggable",
   "main": "index.js",
   "scripts": {
+    "run:demo": "parcel ./demo/index.html",
+    "build:demo": "parcel build ./demo/index.html",
     "build": "ngc --project",
     "test": "tsc && ava"
   },
@@ -21,8 +23,11 @@
     "@angular/router": "^5.2.2",
     "@shopify/draggable": "^1.0.0-beta.4",
     "ava": "^0.25.0",
+    "parcel-bundler": "^1.5.1",
+    "parcel-plugin-angular": "^0.5.0",
     "rxjs": "^5.5.6",
     "typescript": "^2.6.2",
     "zone.js": "^0.8.20"
-  }
+  },
+  "dependencies": {}
 }

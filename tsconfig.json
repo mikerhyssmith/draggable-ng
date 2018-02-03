@@ -16,5 +16,9 @@
       "es2016",
       "dom"
     ]
+  },
+  "parcelAngularOptions": {
+    "watch": "jit",
+    "build": "aot"
   }
 }

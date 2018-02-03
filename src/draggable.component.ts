@@ -1,10 +1,11 @@
 import { Component, OnInit, ElementRef, ViewChildren } from '@angular/core';
 import { Draggable } from '@shopify/draggable';
-import { DraggableContainer } from 'container/draggable-container.directive';
+import { DraggableOptions } from "./model/DraggableOptions";
+import { DraggableContainer } from './container/draggable-container.directive';
 
 @Component({
-    selector: 'draggable-container',
-    templateUrl: 'draggable-container.component.html'
+    selector: 'draggable',
+    templateUrl: './draggable.template.html'
 })
 
 export class DraggableComponent implements OnInit {

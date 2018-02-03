@@ -23,8 +23,10 @@
     "@angular/router": "^5.2.2",
     "@shopify/draggable": "^1.0.0-beta.4",
     "ava": "^0.25.0",
+    "babel-preset-shopify": "16.2.0",
+    "node-sass": "^4.7.2",
     "parcel-bundler": "^1.5.1",
-    "parcel-plugin-angular": "^0.5.0",
+    "parcel-plugin-typescript": "^0.5.3",
     "rxjs": "^5.5.6",
     "typescript": "^2.6.2",
     "zone.js": "^0.8.20"

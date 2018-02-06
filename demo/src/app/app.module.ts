@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
-import { DemoAppComponent } from './demo';
+import { AppComponent } from './app.component';
 import { UsageComponent } from './usage/usage.component';
 import { ExamplesComponent } from './examples/examples.component';
 
@@ -13,17 +13,17 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
-    DemoAppComponent,
+    AppComponent,
     UsageComponent,
     ExamplesComponent
   ],
-  imports: [ 
+  imports: [
     BrowserModule,
     RouterModule.forRoot(
       appRoutes
     )
   ],
-  bootstrap: [DemoAppComponent]
+  bootstrap: [AppComponent]
 })
 
 export class AppModule {}

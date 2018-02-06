@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DraggableOptions } from '../../../src/model/draggable-options';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  options = new DraggableOptions();
+
+  constructor() {}
 }

@@ -1,25 +1,36 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "outDir": "./dist/out-tsc",
+    "outDir": "./dist",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
+    "baseUrl": "",
     "typeRoots": [
       "node_modules/@types"
     ],
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@shopify/*": ["../node_modules/@shopify/*"] 
+    },
+  
   },
   "exclude": [
     "test.ts",
-    "**/*.spec.ts"
+    "**/*.spec.ts",
+    "demo/**"
   ],
-  "parcelAngularOptions": {
+  "include": [
+    "src/**/*"
+  ],
+  "angularCompilerOptions": {    // Angular compiler specific config
+    "genDir": "dist",
+    "skipTemplateCodegen": true, // Don't produce *.ngfactory.ts
   }
 }

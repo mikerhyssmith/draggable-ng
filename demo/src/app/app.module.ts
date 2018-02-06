@@ -3,22 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { UsageComponent } from './usage/usage.component';
+import { UsageModule } from './usage/usage.module';
 import { ExamplesComponent } from './examples/examples.component';
 
 const appRoutes: Routes = [
-  { path: 'usage', component: UsageComponent },
   { path: 'examples', component: ExamplesComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsageComponent,
     ExamplesComponent
   ],
   imports: [
     BrowserModule,
+    UsageModule,
     RouterModule.forRoot(
       appRoutes
     )

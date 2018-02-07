@@ -1,5 +1,5 @@
 {
-  "name": "ngxdraggable",
+  "name": "draggable-ng",
   "version": "0.0.1-alpha.1",
   "description": "Angular wrapper for @shopify/draggable",
   "scripts": {
@@ -12,6 +12,10 @@
   "author": "Mike Smith",
   "license": "MIT",
   "private": false,
+  "files": [
+    "src/",
+    "dist/"
+  ],
   "devDependencies": {
     "@angular/common": "5.1.0",
     "@angular/compiler": "5.1.0",

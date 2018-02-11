@@ -1,5 +1,6 @@
 export class DraggableOptions {
     constructor(private draggable?: string,
+                private droppable?: string,
                 private handle?: string,
                 private delay?: number,
                 private plugins?: Array<any>,

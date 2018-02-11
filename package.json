@@ -3,7 +3,7 @@
   "version": "0.0.1-alpha.5",
   "description": "Angular wrapper for @shopify/draggable",
   "scripts": {
-    "prepublish": "rimraf ./dist && npm run dist",
+    "prepublish": "rimraf ./dist && npm run build",
     "run:demo": "parcel ./demo/index.html",
     "build:demo": "parcel build ./demo/index.html",
     "build": "ngc",
@@ -31,9 +31,13 @@
     "node-sass": "^4.7.2",
     "parcel-bundler": "^1.5.1",
     "parcel-plugin-typescript": "^0.5.3",
+    "rimraf": "^2.6.2",
     "rxjs": "^5.5.6",
     "typescript": "^2.6.2",
     "zone.js": "^0.8.20"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "peerDependencies": {
+    "@shopify/draggable": "1.0.0-beta.4"
+  }
 }

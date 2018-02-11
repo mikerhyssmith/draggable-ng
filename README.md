@@ -4,6 +4,7 @@
 
 _This is a very early alpha build not suitable for production use_
 
+---
 ## Usage
 
 ```html

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, AfterViewInit, OnDestroy, ViewChildren, ContentChildren, ElementRef } from '@angular/core';
+import { Component, Input, AfterViewInit, OnDestroy, ContentChildren, EventEmitter, Output } from '@angular/core';
 import { Draggable } from '@shopify/draggable';
 import { DraggableOptions } from "./model/draggable-options";
 import { DraggableContainer } from './container/draggable-container.directive';
@@ -12,6 +12,8 @@ export class DraggableComponent implements AfterViewInit, OnDestroy {
     
     @ContentChildren(DraggableContainer) containers: Array<DraggableContainer>
     @Input() options: DraggableOptions;
+    @Output() dragEvents: EventEmitter<DraggableDragEvent>
+    @Output() mirrorEvents: EventEmitter<DraggableMirrorEvent>
     private draggable: Draggable;
 
     constructor() {}

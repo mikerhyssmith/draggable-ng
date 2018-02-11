@@ -9,6 +9,38 @@ _This is a very early alpha build not suitable for production use_
 
 ### Draggable
 
+Include the Draggable Module in one of your apps modules.
+
+```javascript
+import { DraggableModule } from 'draggable-ng/dist/draggable.module';
+
+@NgModule({
+  imports: [ DraggableModule ]
+})
+
+```
+
+``` javascript
+import { Component } from '@angular/core';
+import { DraggableOptions } from 'draggable-ng/dist/model/draggable-options';
+
+@Component({
+  selector: 'some-component',
+  templateUrl: './some.component.html'
+})
+export class SomeComponent {
+  options = new DraggableOptions();
+
+  onDragEvent(event) {
+    console.log(event);
+  }
+
+  onMirrorEvent(event) {
+    console.log(event);
+  }
+}
+```
+
 ```html
 
 <draggable options=options (onDragEvent)=onDragEvent($event) (onMirrorEvent)=onMirrorEvent($event)>

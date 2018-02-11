@@ -1,6 +1,6 @@
 {
   "name": "draggable-ng",
-  "version": "0.0.1-alpha.3",
+  "version": "0.0.1-alpha.4",
   "description": "Angular wrapper for @shopify/draggable",
   "scripts": {
     "run:demo": "parcel ./demo/index.html",

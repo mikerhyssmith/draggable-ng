@@ -79,10 +79,7 @@ import { DraggableOptions } from 'draggable-ng/dist/model/draggable-options';
   templateUrl: './some.component.html'
 })
 export class SomeComponent {
-  options = new DraggableOptions( {
-    draggable: 'li',
-    droppable: '.dropzone',
-  });
+  options = new DraggableOptions();
 
   onDragEvent(event) {
     console.log(event);
@@ -101,13 +98,13 @@ export class SomeComponent {
 ```html
 
 <droppable options=options (onDragEvent)=onDragEvent($event) (onDropEvent)=onDropEvent($event) (onMirrorEvent)=onMirrorEvent($event)>
-  <ul draggable-container>
+  <ul draggable-container  class="draggable-droppable">
     <li class="draggable-source">Bread</li>
     <li class="draggable-source">Eggs</li>
     <li class="draggable-source">Milk</li>
   </ul>
 
-  <ul draggable-container class="dropzone">
+  <ul draggable-container  class="draggable-droppable">
     <li class="draggable-source">Chicken</li>
     <li class="draggable-source">Beef</li>
     <li class="draggable-source">Pastrami</li>

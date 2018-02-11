@@ -15,3 +15,8 @@ export enum MirrorEventType {
     MOVE = 'mirror:move',
     DESTROY = 'mirror:destroy'
 }
+
+export enum DropEventType {
+    OVER = 'droppable:over',
+    OUT = 'droppable:out'
+}

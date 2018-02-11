@@ -1,8 +1,8 @@
 import { Component, Input, AfterViewInit, OnDestroy, ContentChildren, EventEmitter, Output } from '@angular/core';
 import { Draggable } from '@shopify/draggable';
-import { DraggableOptions } from "./model/draggable-options";
+import { DraggableOptions } from './model/draggable-options';
 import { DraggableContainer } from './container/draggable-container.directive';
-import { DragEventType, MirrorEventType, DraggableDragEvent, DraggableMirrorEvent } from "./model"
+import { DragEventType, MirrorEventType, DraggableDragEvent, DraggableMirrorEvent } from './model'
 
 @Component({
     selector: 'draggable',
@@ -10,7 +10,7 @@ import { DragEventType, MirrorEventType, DraggableDragEvent, DraggableMirrorEven
 })
 
 export class DraggableComponent implements AfterViewInit, OnDestroy {
-    
+
     @ContentChildren(DraggableContainer) containers: Array<DraggableContainer>
     @Input() options: DraggableOptions;
     @Output() onDragEvent: EventEmitter<DraggableDragEvent>
@@ -28,7 +28,7 @@ export class DraggableComponent implements AfterViewInit, OnDestroy {
 
       Object.keys(DragEventType).forEach(eventType => {
         const event = DragEventType[eventType];
-        this.draggable.on(event, (draggableEvent) =>{
+        this.draggable.on(event, (draggableEvent) => {
             this.onDragEvent.emit(new DraggableDragEvent(event, draggableEvent));
         });
       });

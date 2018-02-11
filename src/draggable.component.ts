@@ -13,13 +13,13 @@ export class DraggableComponent implements AfterViewInit, OnDestroy {
     
     @ContentChildren(DraggableContainer) containers: Array<DraggableContainer>
     @Input() options: DraggableOptions;
-    @Output() dragEvents: EventEmitter<DraggableDragEvent>
-    @Output() mirrorEvents: EventEmitter<DraggableMirrorEvent>
+    @Output() onDragEvent: EventEmitter<DraggableDragEvent>
+    @Output() onMirrorEvent: EventEmitter<DraggableMirrorEvent>
     private draggable: Draggable;
 
     constructor() {
-        this.dragEvents = new EventEmitter();
-        this.mirrorEvents = new EventEmitter();
+        this.onDragEvent = new EventEmitter();
+        this.onMirrorEvent = new EventEmitter();
     }
 
     ngAfterViewInit() {
@@ -28,15 +28,15 @@ export class DraggableComponent implements AfterViewInit, OnDestroy {
 
       Object.keys(DragEventType).forEach(eventType => {
         const event = DragEventType[eventType];
-        this.draggable.on(event, function(draggableEvent){
-            this.dragEvents.next(new DraggableDragEvent(event, draggableEvent));
+        this.draggable.on(event, (draggableEvent) =>{
+            this.onDragEvent.next(new DraggableDragEvent(event, draggableEvent));
         });
       });
 
       Object.keys(MirrorEventType).forEach(eventType => {
         const event = MirrorEventType[eventType];
-        this.draggable.on(event, function(mirrorEvent){
-            this.mirrorEvents.next(new DraggableMirrorEvent(event, mirrorEvent));
+        this.draggable.on(event, (mirrorEvent) => {
+            this.onMirrorEvent.next(new DraggableMirrorEvent(event, mirrorEvent));
         });
       });
     }

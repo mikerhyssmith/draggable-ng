@@ -29,14 +29,14 @@ export class DraggableComponent implements AfterViewInit, OnDestroy {
       Object.keys(DragEventType).forEach(eventType => {
         const event = DragEventType[eventType];
         this.draggable.on(event, (draggableEvent) =>{
-            this.onDragEvent.next(new DraggableDragEvent(event, draggableEvent));
+            this.onDragEvent.emit(new DraggableDragEvent(event, draggableEvent));
         });
       });
 
       Object.keys(MirrorEventType).forEach(eventType => {
         const event = MirrorEventType[eventType];
         this.draggable.on(event, (mirrorEvent) => {
-            this.onMirrorEvent.next(new DraggableMirrorEvent(event, mirrorEvent));
+            this.onMirrorEvent.emit(new DraggableMirrorEvent(event, mirrorEvent));
         });
       });
     }

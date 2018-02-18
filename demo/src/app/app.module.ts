@@ -5,9 +5,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { UsageModule } from './usage/usage.module';
 import { ExamplesComponent } from './examples/examples.component';
+import { UsageComponent } from './usage/usage.component';
 
 const appRoutes: Routes = [
-  { path: 'examples', component: ExamplesComponent }
+  { path: 'examples', component: ExamplesComponent },
+  { path: 'usage', component: UsageComponent }
 ];
 
 @NgModule({

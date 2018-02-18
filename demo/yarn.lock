@@ -27,9 +27,9 @@
     "@ngtools/json-schema" "^1.1.0"
     rxjs "^5.5.6"
 
-"@angular/animations@5.1.3":
-  version "5.1.3"
-  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-5.1.3.tgz#3af3073bfdfeac61d7e6058257b3b19c97183a96"
+"@angular/animations@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-5.1.0.tgz#439135ed56355ec779791bf3ea7de1c711cd2185"
   dependencies:
     tslib "^1.7.1"
 
@@ -96,9 +96,9 @@
   optionalDependencies:
     node-sass "^4.3.0"
 
-"@angular/common@5.1.3":
-  version "5.1.3"
-  resolved "https://registry.yarnpkg.com/@angular/common/-/common-5.1.3.tgz#db517c00a95f72885eb2091098eaed4f95494a63"
+"@angular/common@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@angular/common/-/common-5.1.0.tgz#88b586e0aff6a93b8de08cce1e14c0e65fde5a56"
   dependencies:
     tslib "^1.7.1"
 
@@ -111,27 +111,27 @@
     reflect-metadata "^0.1.2"
     tsickle "^0.26.0"
 
-"@angular/compiler@5.1.3":
-  version "5.1.3"
-  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-5.1.3.tgz#125008477895aee1bf71294bf981a4ba184c1e59"
+"@angular/compiler@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-5.1.0.tgz#23fe2914061487fcc909616b4dc5c24c5a8d47a1"
   dependencies:
     tslib "^1.7.1"
 
-"@angular/core@5.1.3":
-  version "5.1.3"
-  resolved "https://registry.yarnpkg.com/@angular/core/-/core-5.1.3.tgz#b739f69834c344285250a384d0c203dd36778a37"
+"@angular/core@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-5.1.0.tgz#6f7596ad780418cecac527ae0508cfc1a36383a0"
   dependencies:
     tslib "^1.7.1"
 
-"@angular/forms@5.1.3":
-  version "5.1.3"
-  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-5.1.3.tgz#fe4c0c37c504e78c85f8e50db6e098705fa72f4c"
+"@angular/forms@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-5.1.0.tgz#8699c7117a348607d4c7a1deee9caa5ca460c2cb"
   dependencies:
     tslib "^1.7.1"
 
-"@angular/http@5.1.3":
-  version "5.1.3"
-  resolved "https://registry.yarnpkg.com/@angular/http/-/http-5.1.3.tgz#eeea2a6760fa54449a967fb5abdd473736c5c989"
+"@angular/http@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@angular/http/-/http-5.1.0.tgz#59d47c1878896f25e64b9abc700017cff7836710"
   dependencies:
     tslib "^1.7.1"
 
@@ -139,21 +139,21 @@
   version "5.2.3"
   resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-5.2.3.tgz#b858c1cd3740b29de145a6d60b2562eef391d3b3"
 
-"@angular/platform-browser-dynamic@5.1.3":
-  version "5.1.3"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-5.1.3.tgz#ad37e4dbd5251e7ea256ad9323fe11c848d04050"
+"@angular/platform-browser-dynamic@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-5.1.0.tgz#60566728dd949c442e064bf8247aa51672411f2b"
   dependencies:
     tslib "^1.7.1"
 
-"@angular/platform-browser@5.1.3":
-  version "5.1.3"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-5.1.3.tgz#5abe7809009eff6bff3bf89faba96fe066fb2036"
+"@angular/platform-browser@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-5.1.0.tgz#b5373232403d73c355b971cfae8b03191c4f58a2"
   dependencies:
     tslib "^1.7.1"
 
-"@angular/router@5.1.3":
-  version "5.1.3"
-  resolved "https://registry.yarnpkg.com/@angular/router/-/router-5.1.3.tgz#69627d7186e4ab8e7d4058c4400f82d3899ebd7a"
+"@angular/router@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@angular/router/-/router-5.1.0.tgz#4e7283e34cd3d244899b289d835b830640c7bad9"
   dependencies:
     tslib "^1.7.1"
 
@@ -1641,6 +1641,10 @@ domutils@1.5.1:
   dependencies:
     dom-serializer "0"
     domelementtype "1"
+
+draggable-ng@^0.0.1-alpha.8:
+  version "0.0.1-alpha.8"
+  resolved "https://registry.yarnpkg.com/draggable-ng/-/draggable-ng-0.0.1-alpha.8.tgz#0a9e99c87c5ae41e64a3212e2b91f664bf2c5465"
 
 duplexify@^3.4.2, duplexify@^3.5.3:
   version "3.5.3"
